@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--librería-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    <title>E-COMMERCE</title>
 </head>
+
 <body>
     <div class="container mt-5 pt-5">
         <div class="row">
+
              <!--Barra de navegación-->
             <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
                 <a class="navbar-brand pl-5 ml-4" href="#"><strong>E-commerce</strong></a>
@@ -39,42 +41,41 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-lg-12 d-none d-lg-block">
-                            <!--Lista de categorías-->
-                            <h5><strong>Categorías</strong></h5>
+                        <!--Lista de categorías-->
+                        <h5><strong>Categorías</strong></h5>
+                        <div class="list-group">
                             <div class="list-group">
-                                <div class="list-group">
-                                    <a class="list-group-item d-flex justify-content-between align-items-center active" href="#">
-                                        <span class="text">Todos</span><span class="badge badge-secondary badge-pill">100</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Hombre</span><span class="badge badge-secondary badge-pill">4</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Mujer</span><span class="badge badge-secondary badge-pill">12</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Hipster</span><span class="badge badge-secondary badge-pill">24</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Metal</span><span class="badge badge-secondary badge-pill">6</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Universidad</span><span class="badge badge-secondary badge-pill">5</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Deportiva</span><span class="badge badge-secondary badge-pill">8</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Rayas</span><span class="badge badge-secondary badge-pill">11</span>
-                                    </a>
-                                    <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
-                                        <span class="text-dark">Apretada</span><span class="badge badge-secondary badge-pill">19</span>
-                                    </a>
-                                </div>
+                                <a class="list-group-item d-flex justify-content-between align-items-center active" href="#">
+                                    <span class="text">Todos</span><span class="badge badge-secondary badge-pill">100</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Hombre</span><span class="badge badge-secondary badge-pill">4</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Mujer</span><span class="badge badge-secondary badge-pill">12</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Hipster</span><span class="badge badge-secondary badge-pill">24</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Metal</span><span class="badge badge-secondary badge-pill">6</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Universidad</span><span class="badge badge-secondary badge-pill">5</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Deportiva</span><span class="badge badge-secondary badge-pill">8</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Rayas</span><span class="badge badge-secondary badge-pill">11</span>
+                                </a>
+                                <a class="list-group-item d-flex justify-content-between align-items-center" href="#">
+                                    <span class="text-dark">Apretada</span><span class="badge badge-secondary badge-pill">19</span>
+                                </a>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -83,11 +84,11 @@
                 <div class="row">
                     <div class="col-12">
                         <!--Carrusel de imágenes-->
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <div id="carrusel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carrusel" data-slide-to="1"></li>
+                                <li data-target="#carrusel" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -100,16 +101,15 @@
                                 <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/banner-slider-3.jpg"  alt="Publicidad 3" class="d-block w-100">
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
                         </div>
-
                     </div>
                 </div>
                 <br>
@@ -118,7 +118,7 @@
                     <div class="col-6 col-md-4 pb-4">
                         <!--Producto 1-->
                         <div class="card">
-                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" class="card-img-top" alt="Camiseta 1">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>Hipster Ultimate</strong></h5>
                                 <p class="card-text">La camiseta ideal para hipsters.</p>
@@ -133,7 +133,7 @@
                     <div class=" col-6 col-md-4 pb-4">
                         <!--Producto 2-->
                         <div class="card">
-                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" class="card-img-top" alt="Camiseta 2">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>On Motion Live</strong></h5>
                                 <p class="card-text">Perfecta para salidas rocosas.</p>
@@ -148,7 +148,7 @@
                     <div class="col-6 col-md-4 pb-4">
                         <!--Producto 3-->
                         <div class="card">
-                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" class="card-img-top" alt="Camiseta 3">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>Underground Max</strong></h5>
                                 <p class="card-text">Para los amantes de underground.</p>
@@ -163,7 +163,7 @@
                     <div class="col-6 col-md-4 pb-4">
                         <!--Producto 4-->
                         <div class="card">
-                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" class="card-img-top" alt="Camiseta 4">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>Santo Domingo Tigers</strong></h5>
                                 <p class="card-text">En honor a este gran equipo.</p>
@@ -178,7 +178,7 @@
                     <div class="col-6 col-md-4 pb-4">
                         <!--Producto 5-->
                         <div class="card">
-                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" class="card-img-top" alt="...">
+                            <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" class="card-img-top" alt="Camiseta 5">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>Una camiseta más</strong></h5>
                                 <p class="card-text">Nunca sobra una así cool.</p>
@@ -194,14 +194,13 @@
             </div>
         </div>
     </div>
-
         
     <!-- Modal -->
-    <div class="modal fade" id="modalDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalDetails" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel"><strong>Hipster Ultimate</strong></h5>
+                <h5 class="modal-title" id="modalLabel"><strong>Hipster Ultimate</strong></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -248,13 +247,12 @@
                         <div class="col-md-12 mt-4">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="home" aria-selected="true">Descripción</a>
+                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Descripción</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" id="comment-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="contact" aria-selected="false">Comentarios</a>
                                 </li>
                             </ul>
-
                             <div class="tab-content my-4" id="myTabContent">
                                 <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
                                     Lorem ipsum dolor sit amet consectetur, adipiscing elit lacinia interdum lectus, 
@@ -279,7 +277,6 @@
                             </div>
                         </div>
                     </div>
-                     
                 </div>
                       
             <div class="modal-footer">
@@ -289,8 +286,6 @@
             </div>
         </div>
     </div>
-
-
 
     <!--js-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
