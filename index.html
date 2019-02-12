@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 d-none d-lg-block">
                             <!--Lista de categorías-->
                             <h5>Categorías</h5>
                             <div class="list-group">
@@ -79,7 +79,7 @@
 
             <div class="col-lg-9">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-12">
                         <!--Carrusel de imágenes-->
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -112,7 +112,7 @@
                 <br>
 
                 <div class="row">
-                    <div class="col-lg-4 pb-4">
+                    <div class="col-6 col-md-4 pb-4">
                         <!--Producto 1-->
                         <div class="card">
                             <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" class="card-img-top" alt="...">
@@ -120,12 +120,14 @@
                                 <h5 class="card-title">Hipster Ultimate</h5>
                                 <p class="card-text">La camiseta ideal para hipsters.</p>
                                 <a href="#" class="btn btn-primary">$229<i class="fa fa-shopping-cart pl-1" aria-hidden="true"></i></a>
-                                <a href="#" class="btn btn-outline-dark">Detalles</a>
+                                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#modalDetails">
+                                    Detalles
+                                </button>
                             </div>
                         </div>    
                     </div>
 
-                    <div class="col-lg-4 pb-4">
+                    <div class=" col-6 col-md-4 pb-4">
                         <!--Producto 2-->
                         <div class="card">
                             <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" class="card-img-top" alt="...">
@@ -138,7 +140,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 pb-4">
+                    <div class="col-6 col-md-4 pb-4">
                         <!--Producto 3-->
                         <div class="card">
                             <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" class="card-img-top" alt="...">
@@ -151,7 +153,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-4 pb-4">
+                    <div class="col-6 col-md-4 pb-4">
                         <!--Producto 4-->
                         <div class="card">
                             <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-4.jpg" class="card-img-top" alt="...">
@@ -164,7 +166,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-lg-4 pb-4">
+                    <div class="col-6 col-md-4 pb-4">
                         <!--Producto 5-->
                         <div class="card">
                             <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-5.jpg" class="card-img-top" alt="...">
@@ -178,6 +180,101 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <!-- Modal -->
+    <div class="modal fade" id="modalDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><strong>Hipster Ultimate</strong></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--Alerta-->
+                            <div class="alert alert-primary" role="alert"><i class="fas fa-info-circle" aria-hidden="true"></i>
+                                Este producto está agotado
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!--Detalles del producto-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" class="card-img-top" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                Precio: <strong>$299</strong>
+                            </p>
+                            <p>
+                                Calificación: 
+                                <i class="fas fa-star aria-hidden="true""></i><i class="fas fa-star aria-hidden="true""></i><i class="fas fa-star aria-hidden="true""></i><i class="fas fa-star aria-hidden="true""></i><i class="far fa-star aria-hidden="true""></i>
+                            </p>
+                            <p>
+                                <span class="badge badge-warning">Hipster</span>
+                                <span class="badge badge-secondary">Deportiva</span>
+                            </p>
+                            <p>
+                                <a class="link-primary "href="#"><i class="fas fa-heart mr-1" aria-hidden="true"></i>Agregar a los deseos</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!--Tabs de navegación-->
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="home" aria-selected="true">Descripción</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="comment-tab" data-toggle="tab" href="#comments" role="tab" aria-controls="contact" aria-selected="false">Comentarios</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content my-4" id="myTabContent">
+                                <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                    Lorem ipsum dolor sit amet consectetur, adipiscing elit lacinia interdum lectus, 
+                                    pretium tellus habitant quam. Iaculis ornare congue volutpat egestas fusce curabitur 
+                                    duis dignissim, fringilla eu scelerisque class blandit porttitor.
+                                </div>
+                                <div class="tab-pane fade" id="comments" role="tabpanel" aria-labelledby="comment-tab">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Germán Escobar comentó hace dos días
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Esta camisa está increíble, la quiero</li>                                            
+                                        </ul>
+                                    </div>
+                                    <form class="mt-4">
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="textarea" rows="3" placeholder="Ingresa tu comentario"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+                      
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
             </div>
         </div>
     </div>
